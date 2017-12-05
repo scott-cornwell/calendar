@@ -51,7 +51,7 @@
   "scripts": {
     "test": "mocha --require babel-core/register",
     "dev": "webpack-dev-server",
-		"deploy": "scotty --spa --source ./public",
+		"deploy": "npm run build && scotty --spa --source ./public --bucket scott-react-calendar-netflix-demo",
     "build": "webpack --config webpack.config.js",
     "prod": "NODE_ENV=production webpack --config webpack.config.js --progress --colors"
   }
