@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: -webkit-linear-gradient(top, #2f072f, #dc1d1d);
+}
+
+.Layout {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}

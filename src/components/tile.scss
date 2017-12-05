@@ -1,0 +1,32 @@
+.Tile {
+	box-shadow: -1px -1px #dc1d1d, inset -1px -1px 0 0 #a71349;
+	height: 100px;
+	width: 100px;
+	padding: 5px;
+	color: #fb0404;
+	background-color: #da4b4bc4;
+	transition: 0.2s linear background-color;
+
+	&.Day {
+		background-color: #f3c4c1e8;
+	}
+
+	&:hover {
+		background-color: rgba(56,17,80,0.14);
+	}
+	&:hover .Event {
+		text-overflow: none;
+		overflow: visible;
+		position: absolute;
+		color: #eee;
+		padding: 4px 8px;
+		border-radius: 4px;
+		background-color: rgba(55,55,55,0.2);
+	}
+}
+
+.Event {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
