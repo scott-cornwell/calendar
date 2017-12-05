@@ -4,29 +4,29 @@
 	width: 100px;
 	padding: 5px;
 	color: #fb0404;
-	background-color: #da4b4bc4;
+	background-color: rgba(218, 75, 75, 196);
 	transition: 0.2s linear background-color;
+	opacity: 0.5;
 
 	&.Day {
-		background-color: #f3c4c1e8;
+		background-color: rgba(218, 75, 75, 196);
+		opacity: 0.9;
 	}
 
 	&:hover {
 		background-color: rgba(56,17,80,0.14);
 	}
-	&:hover .Event {
-		text-overflow: none;
-		overflow: visible;
-		position: absolute;
-		color: #eee;
-		padding: 4px 8px;
-		border-radius: 4px;
-		background-color: rgba(55,55,55,0.2);
-	}
 }
+
+.DayLabel {
+	color: #752929;
+	font-weight: bold;
+}
+
 
 .Event {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	color: #111;
 }
