@@ -1,15 +1,17 @@
+$tile-color: rgba(218, 75, 75, 196)
+
 .Tile
 	box-shadow: -1px -1px #dc1d1d, inset -1px -1px 0 0 #a71349
 	height: 100px
 	width: 100px
 	padding: 5px
 	color: #fb0404
-	background-color: rgba(218, 75, 75, 196)
-	transition: 0.2s linear background-color
+	background-color: $tile-color
+	transition: 0.2s linear background-color, 0.2s linear opacity
 	opacity: 0.5
 
 	&.Day
-		background-color: rgba(218, 75, 75, 196)
+		background-color: $tile-color
 		opacity: 0.9
 
 	&:hover

@@ -4,6 +4,7 @@
 	"map": false,
 	"plugins": {
 		"postcss-nested": {},
+		"postcss-variables": {},
 		"autoprefixer": {
 			"grid": true,
 			"flexbox": "no-2009"
