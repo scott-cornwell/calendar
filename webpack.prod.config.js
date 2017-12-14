@@ -24,6 +24,9 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.NamedModulesPlugin(),
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': JSON.stringify('production')
+		}),
 		new ExtractTextPlugin('styles-[hash].css'),
 		new HtmlWebpackPlugin({
 			template: './src/index_template.html',

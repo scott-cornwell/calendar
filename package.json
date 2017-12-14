@@ -25,6 +25,7 @@
     "css-loader": "^0.28.4",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-15": "^1.0.5",
+    "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.11.2",
     "gh-pages": "^1.1.0",
@@ -65,6 +66,6 @@
     "dev": "webpack-dev-server --config webpack.config.js --progress --colors",
     "deploy": "npm run prod && scotty --spa --source ./public --bucket scott-react-calendar-netflix-demo",
     "prod": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
-    "serve": "http-server ./public --proxy http://localhost:8080"
+    "serve": "node ./server.js"
   }
 }
