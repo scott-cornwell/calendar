@@ -6,14 +6,11 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "luxon": "^0.2.5",
-    "node-sass": "^4.5.3",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "sass-loader": "^6.0.6"
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "add-asset-html-webpack-plugin": "^2.1.0",
-    "ava": "^0.24.0",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-espower": "^2.3.2",
@@ -25,7 +22,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "6.22.0",
     "chai": "^4.1.2",
-    "chai-enzyme": "^0.8.0",
     "css-loader": "^0.28.4",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-15": "^1.0.5",
@@ -65,9 +61,8 @@
   "scripts": {
     "clean": "rm -rf ./public",
     "test": "mocha --require babel-core/register --require ignore-styles",
-    "dev": "webpack-dev-server",
-    "deploy": "scotty --spa --source ./public AKIAJPYOPETIOLLEPWMA  wPsahz/44NPXwA33VfD35c5+9M02x3PDFMsp698y",
-    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --progress --colors",
+    "deploy": "npm run prod && scotty --spa --source ./public --bucket scott-react-calendar-netflix-demo",
     "prod": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
     "serve": "http-server ./public --proxy http://localhost:8080"
   }
