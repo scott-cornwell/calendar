@@ -61,7 +61,7 @@
   "scripts": {
     "clean": "rm -rf ./public",
     "test": "mocha --require babel-core/register --require ignore-styles",
-    "dev": "webpack-dev-server --progress --colors",
+    "dev": "webpack-dev-server --config webpack.config.js --progress --colors",
     "deploy": "npm run prod && scotty --spa --source ./public --bucket scott-react-calendar-netflix-demo",
     "prod": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
     "serve": "http-server ./public --proxy http://localhost:8080"

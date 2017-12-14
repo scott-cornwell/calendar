@@ -18,7 +18,7 @@ module.exports = {
 	output: {
 		filename: 'index-[hash].js',
 		path: outputPath,
-		publicPath: '/'
+		publicPath: '/public'
 	},
 	resolve: {
 		extensions: ['.js', '.jsx']
