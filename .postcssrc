@@ -1,0 +1,12 @@
+{
+	"parser": "sugarss",
+	"syntax": "postcss-scss",
+	"map": false,
+	"plugins": {
+		"postcss-nested": {},
+		"autoprefixer": {
+			"grid": true,
+			"flexbox": "no-2009"
+		}
+	}
+}

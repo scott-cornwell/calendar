@@ -26,7 +26,7 @@ module.exports = {
 	devtool: 'eval-sourcemap',
 	devServer: {
 		host: 'localhost',
-		port: 8081,
+		port: 8080,
 		compress: true,
 		historyApiFallback: true,
 		hot: true,
@@ -60,7 +60,7 @@ module.exports = {
 			{
 				test: /\.s?css$/,
 				exclude: /node_modules/,
-				loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+				loaders: [ 'style-loader', 'css-loader', 'postcss-loader' ]
 			},
 			{
 				test: /\.(ttf|eot|svg)$/, loader: 'file-loader'

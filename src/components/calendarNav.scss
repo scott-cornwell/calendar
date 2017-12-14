@@ -1,48 +1,40 @@
-.NavContainer {
-	display: flex;
-	height: 100px;
-}
+.NavContainer
+	display: flex
+	height: 100px
 
-.CalendarNav {
-	display: flex;
-	flex-flow: row;
-	width: 25%;
-	height: 50px;
-	min-width: 300px;
-	margin: auto;
-	padding: 5px;
-	color: #dc1d1d;
-	transition: 0.2s linear color;
-	user-select: none;
-	&:hover {
-		color: #eee;
-	}
-}
+.CalendarNav
+	display: flex
+	flex-flow: row
+	width: 25%
+	height: 50px
+	min-width: 300px
+	margin: auto
+	padding: 5px
+	color: #dc1d1d
+	transition: 0.2s linear color
+	user-select: none
+	&:hover
+		color: #eee
 
-.NavLeft {
-	cursor: pointer;
-	flex: 1;
-	text-align: right;
-	padding: 10px 10px 5px 5px;
-	&:hover {
-		color: #eee;
-	}
-}
+.NavLeft
+	cursor: pointer
+	flex: 1
+	text-align: right
+	padding: 10px 10px 5px 5px
+	&:hover
+		color: #eee
 
-.NavMonth {
-	flex: 3;
-	text-align: center;
-	padding: 10px;
-	font-size: 18px;
-	font-weight: bold;
-}
+.NavMonth
+	flex: 3
+	text-align: center
+	padding: 10px
+	font-size: 18px
+	font-weight: bold
 
-.NavRight {
-	cursor: pointer;
-	flex: 1;
-	padding: 10px 5px 5px 10px;
-	text-align: left;
-	&:hover {
-		color: #eee;
-	}
-}
+.NavRight
+	cursor: pointer
+	flex: 1
+	padding: 10px 5px 5px 10px
+	text-align: left
+	&:hover
+		color: #eee

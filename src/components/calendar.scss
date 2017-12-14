@@ -1,18 +1,16 @@
-.DayHeader {
-	height: 30px;
-	width: 100px;
-	padding: 5px;
-	color: #dc1d1d;
-	font-weight: bold;
-	font-size: 18px;
-}
+.DayHeader
+	height: 30px
+	width: 100px
+	padding: 5px
+	color: #dc1d1d
+	font-weight: bold
+	font-size: 18px
 
-.Calendar {
-	display: flex;
-	flex-flow: row wrap;
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 100%;
-	align-content: flex-start;
-}
+.Calendar
+	display: flex
+	flex-flow: row wrap
+	width: 700px
+	margin-left: auto
+	margin-right: auto
+	height: 100%
+	align-content: flex-start
