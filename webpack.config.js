@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackHardDiskPlugin = require('html-webpack-harddisk-plugin')
 const AddAsset = require('add-asset-html-webpack-plugin')
 const HappyPack = require('happypack')
-const threadPool = HappyPack.ThreadPool({ size: 3 })
+const threadPool = HappyPack.ThreadPool({ size: 4 })
 const outputPath = path.resolve(__dirname, 'public')
 
 module.exports = {
@@ -47,6 +47,12 @@ module.exports = {
 			threadPool: threadPool,
 			loaders: ['babel-loader?cacheDirectory']
 		}),
+		new HappyPack({
+			id: 'css',
+			verbose: false,
+			threadPool: threadPool,
+			loaders: [ 'style-loader', 'css-loader', 'postcss-loader' ]
+		}),
 		new HtmlWebpackHardDiskPlugin(),
 		new webpack.optimize.ModuleConcatenationPlugin()
 	],
@@ -60,7 +66,7 @@ module.exports = {
 			{
 				test: /\.s?css$/,
 				exclude: /node_modules/,
-				loaders: [ 'style-loader', 'css-loader', 'postcss-loader' ]
+				loader: 'happypack/loader?id=css'
 			},
 			{
 				test: /\.(ttf|eot|svg)$/, loader: 'file-loader'

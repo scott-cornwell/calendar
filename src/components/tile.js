@@ -18,8 +18,8 @@ class Tile extends Component {
 				<span className="DayLabel">{day.day}</span>
 				{day.events && this.renderEvents(day)}
 			</div>
-		);
+		)
 	}
 }
 
-export default Tile;
+export default Tile
